@@ -1,0 +1,176 @@
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.75rem 0 0.75rem 0;
+    width: 100vw;
+    background-color: white;
+}
+
+.header_brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container_1{
+    display: flex;
+    align-items: center;
+    width: 55%;
+}
+.logo_image{
+    max-height: 3.5rem;
+    max-width: 6rem;
+    
+}
+
+.search_img{
+    display: none;
+}
+.search__logo{
+    display: none;
+}
+.header_search {
+    display: flex;
+    align-items: center;
+    background-color: #f0f5ff;
+    border-radius: 8px;
+    color: gray;
+    padding-left: 1rem;
+    font-size: 1.6rem;
+    font-family: inter_regular,fallback-inter_regular,Arial,sans-serif;
+    width: 95%;
+}
+
+.header_search input{
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 36vw;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-size: 1.1rem;
+}
+
+.header_signin {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 6rem;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 0.6rem;
+    font-weight: 500;
+}
+
+.header_signin span{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+}
+
+.hamBurger{
+    display: none;
+    font-size: 1.5rem;
+}
+
+.header_signin:hover{
+    background-color: rgb(52, 52, 224);
+    color: #f0f5ff;
+}
+
+.proImg {
+    font-size: 1.3rem;
+}
+
+.header_cart {
+    display: flex;
+    align-items: center;
+    width: 3.7rem;
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+.cartIcon {
+    font-size: 1.3rem;
+}
+
+.header_seller {
+    display: flex;
+    align-items: center;
+    width: 9rem;
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+.dots_3{
+    font-weight: bolder;
+}
+
+.header_dots{
+    border-radius: 6px;
+    padding: 6px 10px 6px 10px;
+}
+
+.header_dots:hover{
+    border: solid 1px rgb(207, 195, 195);
+    background-color: rgb(247, 247, 247);
+}
+
+.header_signin:hover, .header_cart:hover,.header_seller:hover, .header_dots:hover{
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 35%;
+}
+
+
+@media (max-width: 1080px) {
+    .header_cart span,
+    .arrow,
+    .header_seller span {
+      display: none;
+    }
+  }
+
+  @media (max-width: 766px) {
+      .header{
+          width: 100%;
+      }
+      .header_search,
+      .header_dots,
+      .header_seller{
+          display: none;
+
+      }
+
+      .header{
+          justify-content: space-between;
+          /* margin: 0 5rem 0 5rem; */
+          width: 80%;
+      }
+      .container{
+          justify-content: none;
+      }
+
+      .logo_image{
+          max-height: 4rem;
+      }
+
+      .hamBurger{
+          display: inline;
+      }
+      .search_img{
+          display: inline;
+      }
+      .search__logo{
+          display: inline;
+      }
+  }
+  

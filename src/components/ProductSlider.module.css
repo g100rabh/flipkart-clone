@@ -1,0 +1,32 @@
+.swiper__con{
+    position: relative;
+}
+
+.nextbtn,.prevbtn{
+    position: absolute;
+    top: 30%;
+ 
+    z-index: 100;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    width: 40px;
+    height: 88px;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,.12);
+
+}
+
+.nextbtn {
+    right: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .prevbtn {
+    left: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
